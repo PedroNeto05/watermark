@@ -15,19 +15,19 @@ def main():
 
     # Adiciona watermark a uma única imagem
     watermark.add_watermark_to_image(
-        input_image='src/imgs/main.jpg',
-        watermark_image='src/imgs/watermark.png',
-        output_image='src/imgs/output_image.png',
+        input_image='imgs/main.jpg',
+        watermark_image='imgs/watermark.png',
+        output_image='imgs/output_image.png',
         format=watermark.Formats.PNG
     )
 
     # Adiciona watermark a todas as imagens de uma pasta
-    # watermark.add_watermark_to_images_folder(
-    #    input_images_folder='input_images_folder',
-    #    watermark_image='watermark_image.png',
-    #    output_image_folder='output_images_folder',
-    #    format=watermark.Formats.PNG
-    # )
+    watermark.add_watermark_to_images_folder(
+        input_images_folder='input_images_folder',
+        watermark_image='watermark_image.png',
+        output_image_folder='output_images_folder',
+        format=watermark.Formats.PNG
+    )
 
 
 if __name__ == "__main__":
