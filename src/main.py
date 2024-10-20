@@ -15,9 +15,9 @@ def main():
 
     # Adiciona watermark a uma única imagem
     watermark.add_watermark_to_image(
-        input_image='imgs/main.jpg',
-        watermark_image='imgs/watermark.png',
-        output_image='imgs/output_image.png',
+        input_image='imgs_examples/main.jpg',
+        watermark_image='imgs_examples/watermark.png',
+        output_image='imgs_examples/output_image.png',
         format=watermark.Formats.PNG
     )
 
